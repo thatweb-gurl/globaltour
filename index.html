@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>global travel website</title>
+    <!-- font awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/global.css">
+    <script src="./js/global.js" defer></script>
+</head>
+<body>
+    <!-- header section -->
+    <div id="loader" class="loader">
+        <img src="./images/preloader.gif" alt="">
+    </div>
+
+   <header>
+    <a href="#home" class="logo">global<span>tour</span></a>
+
+    <nav class="navbar">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#packages">packages</a>
+        <a href="#gallery">gallery</a>
+        <a href="#booking" class="book">book now</a>
+    </nav>
+    <div id="menu" class="fas fa-bars"></div>
+   </header> 
+
+   <!-- home section -->
+
+   <section id="home" class="home">
+
+    <div class="container">
+        <video id="video1" class="video1" autoplay muted >
+            <source src="./images/video-1.mp4" type="video/mp4">
+        </video>
+        <video id="video2" class="video2"  muted  >
+            <source src="./images/home-vid-2.mp4" type="video/mp4">
+        </video>
+        <video id="video3" class="video3"  muted  >
+            <source src="./images/home-vid-1.mp4" type="video/mp4">
+        </video>
+        <video id="video4" class="video4"  muted >
+            <source src="./images/home-vid-3.mp4" type="video/mp4">
+        </video>
+                <div class="content">
+        
+        <h1>an adventure <br> <span>worthwhile!</span></h1>
+        <p>We offer a variety of authentic destinations. We are able to offer the lowest prices because of our staff of travel
+            experts. WE want to convey a sense of nostalgia, while at the same time being lively. <br>
+            Our target audience are families, friends and couples.  
+        </p>
+        <a href="#services" class="btn">explore &RightArrow;</a>
+        <div class="icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+        </div>
+    </div>
+    </div>
+
+   </section>
+
+   <section class="tips" id="booking">
+   
+    <h1>discover the world with globaltour!</h1>
+    <p>If it's your first time traveling, you're exactly where you need to be, browse our site 
+        for endless destination inspiration and specific travel tips.
+    </p>
+   
+    <form action="">
+
+        <div class="inputBox">
+            <span>where to:</span>
+            <input type="text" placeholder="destination">
+        </div>
+
+        <div class="inputBox">
+            <span>arrival:</span>
+            <input type="date">
+        </div>
+
+        <div class="inputBox">
+            <span>leaving:</span>
+            <input type="date">
+        </div>
+
+        <a href="#home" class="btn">book now</a>
+
+    </form>
+</section>
+
+<!-- about section -->
+
+<section class="about" id="about">
+    <h1>about us</h1>
+
+    <div class="container">
+        <div class="content">
+        <img src="./images/pic-6.jpg" alt="" >
+    </div>
+        <div class="content">
+            <h2>you don't just want to check out places, you want to be 
+                moved by the adventures, fun & beauty.
+            </h2>
+            <p>Globaltour is a travel agency with the tendency to make your dream adventures come true.
+                 Globaltour was established in march 20, 2005. We've since then fulfilled the dream of our 
+                 clients, with amazing destinations and tour guides.
+                 <br>
+                 We <span id="dots">....</span> <span id="more">seek to provide the most authentic content 
+                    from adventurers, explorers and travellers around the world. Our long term mission is to educate,
+                     inspire and enable people to experience a life changing journey
+                 </span>
+            </p>
+            <button onclick="myFunction()" id="btn">read more</button>
+        </div>
+    </div>
+</section>
+
+<section class="services" id="services">
+    <h1>our services</h1>
+    <div class="container">
+
+        <div class="content">
+            <div class="content1">
+            <h2>affordable hotels</h2>
+            <h1>01</h1>
+            </div>
+            <div class="text">
+               <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. In itaque praesentium mollitia! Adipisci exercitationem voluptatibus nisi dolorem dolores natus! Nemo,
+                 blanditiis impedit sequi quia iure officia ex voluptatibus numquam fuga.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content1">
+            <h2>fastest travel</h2>
+            <h1>02</h1>
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In itaque praesentium mollitia! Adipisci exercitationem voluptatibus nisi dolorem dolores natus! Nemo,
+                    blanditiis impedit sequi quia iure officia ex voluptatibus numquam fuga.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content1">
+            <h2>foods & drinks</h2>
+            <h1>03</h1>
+            </div>
+            <div class="text">
+               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In itaque praesentium mollitia! Adipisci exercitationem voluptatibus nisi dolorem dolores natus! Nemo,
+                blanditiis impedit sequi quia iure officia ex voluptatibus numquam fuga.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content1">
+            <h2>safety guide</h2>
+            <h1>04</h1>
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In itaque praesentium mollitia! Adipisci exercitationem voluptatibus nisi dolorem dolores natus! Nemo,
+                    blanditiis impedit sequi quia iure officia ex voluptatibus numquam fuga.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content1">
+            <h2>new adventures</h2>
+            <h1>05</h1>
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In itaque praesentium mollitia! Adipisci exercitationem voluptatibus nisi dolorem dolores natus! Nemo,
+                    blanditiis impedit sequi quia iure officia ex voluptatibus numquam fuga.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="content1">
+            <h2>games & fun</h2>
+            <h1>06</h1>
+        </div>
+            <div class="text">
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. In itaque praesentium mollitia! Adipisci exercitationem voluptatibus nisi dolorem dolores natus! Nemo,
+                blanditiis impedit sequi quia iure officia ex voluptatibus numquam fuga.</p>
+            </div>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- packages section -->
+
+<section class="packages" id="packages">
+    <h1>
+        our packages
+    </h1>
+
+    <div class="container">
+
+        <div class="content">
+            <div class="image">
+                <img src="./images/p-1.jpg" alt="">
+                <h3>mumbai</h3>
+            </div>
+            <div class="text">
+                <h2>n100,000 <span>n150,000</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Reiciendis non 
+                    voluptatibus eum culpa nisi voluptatum debitis id ipsa explicabo aliquam.</p>
+            </div>
+            <a href="#booking" class="btn">book now</a>
+        </div>
+
+        <div class="content">
+            <div class="image">
+                <img src="./images/p-6.jpg" alt="">
+                <h3>egypt</h3>
+            </div>
+            <div class="text">
+                <h2>n200,000 <span>n250,000</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>  Reiciendis non 
+                    voluptatibus eum culpa nisi voluptatum debitis id ipsa explicabo aliquam.</p>
+            </div>
+            <a href="#booking" class="btn">book now</a>
+        </div>
+
+        <div class="content">
+            <div class="image">
+                <img src="./images/p-2.jpg" alt="">
+                <h3>huwai</h3>
+            </div>
+            <div class="text">
+                <h2>n300,000 <span>n400,000</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>  Reiciendis non 
+                    voluptatibus eum culpa nisi voluptatum debitis id ipsa explicabo aliquam.</p>
+            </div>
+            <a href="#booking" class="btn">book now</a>
+        </div>
+
+        <div class="content">
+            <div class="image">
+                <img src="./images/p-4.jpg" alt="">
+                <h3>paris</h3>
+            </div>
+            <div class="text">
+                <h2>n500,000 <span>n650,000</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.  <br> Reiciendis non 
+                    voluptatibus eum culpa nisi voluptatum debitis id ipsa explicabo aliquam.</p>
+            </div>
+            <a href="#booking" class="btn">book now</a>
+        </div>
+
+        <div class="content">
+            <div class="image">
+                <img src="./images/p-5.jpg" alt="">
+                <h3>japan</h3>
+            </div>
+            <div class="text">
+                <h2>n450,000 <span>n550,000</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>  Reiciendis non 
+                    voluptatibus eum culpa nisi voluptatum debitis id ipsa explicabo aliquam.</p>
+            </div>
+            <a href="#booking" class="btn">book now</a>
+        </div>
+
+        <div class="content">
+            <div class="image">
+                <img src="./images/p-3.jpg" alt="">
+                <h3>mexico</h3>
+            </div>
+            <div class="text">
+                <h2>n150,000 <span>n170,000</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br>  Reiciendis non 
+                    voluptatibus eum culpa nisi voluptatum debitis id ipsa explicabo aliquam.</p>
+            </div>
+            <a href="#booking" class="btn">book now</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="gallery" id="gallery">
+    <h1>gallery</h1>
+    <h3>we offer memorable adventures</h3>
+
+    <div class="container">
+        <div class="img-container">
+        <img src="./images/gallery-img-1.jpg" alt="" class="img1">
+        </div>
+        <div class="img-container">
+        <img src="./images/gallery-img-2.jpg" alt="">
+    </div>
+        <div class="img-container">
+        <img src="./images/des-5.jpg" alt="">
+    </div>
+        <div class="img-container">
+        <img src="./images/gallery-img-4.jpg" alt="">
+    </div>
+        <div class="img-container">
+        <img src="./images/gallery-img-5.jpg" alt="" class="img1">
+    </div>
+        <div class="img-container">
+        <img src="./images/gallery-img-6.jpg" alt="">
+    </div>
+        <div class="img-container">
+        <img src="./images/des-7.jpg" alt="">
+    </div>
+        <div class="img-container">
+        <img src="./images/des-8.jpg" alt="">
+    </div>
+        <div class="img-container">
+        <img src="./images/des-4.jpg" alt="">
+    </div>
+        <div class="img-container">
+        <img src="./images/des-1.jpg" alt="">
+    </div>
+        <div class="img-container">
+        <img src="./images/des-2.jpg" alt="">
+    </div>
+        <div class="img-container">
+        <img src="./images/des-3.jpg" alt="">
+    </div>
+
+    </div>
+</section>
+
+<section class="review">
+    <h1>reviews</h1>
+    <h3>what our clients say about us</h3>
+
+    <div class="container">
+
+        <div class="content">
+            <div class="image">
+                <img src="./images/pic-1.png" alt="">
+            </div>
+            <div class="text">
+                <h4>john rivera</h4>
+                <p>Lorem ipsum dolor sit amet consectetur
+                     adipisicing elit. Exercitationem quod nam tempora placeat, aliquam itaque.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="image">
+                <img src="./images/pic-2.png" alt="">
+            </div>
+            <div class="text">
+                <h4>debby brickwall</h4>
+                <p>Lorem ipsum dolor sit amet consectetur
+                     adipisicing elit. Exercitationem quod nam tempora placeat, aliquam itaque.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="image">
+                <img src="./images/pic-3.png" alt="">
+            </div>
+            <div class="text">
+                <h4>juan paolo</h4>
+                <p>Lorem ipsum dolor sit amet consectetur
+                     adipisicing elit. Exercitationem quod nam tempora placeat, aliquam itaque.</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="image">
+                <img src="./images/pic-4.png" alt="">
+            </div>
+            <div class="text">
+                <h4>anna gracey</h4>
+                <p>Lorem ipsum dolor sit amet consectetur
+                     adipisicing elit. Exercitationem quod nam tempora placeat, aliquam itaque.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- contact section -->
+<section class="contact">
+    <h1>contact us</h1>
+    <div class="content">
+    <form action="mailto:lawalkofo2017@gmail.com" method="post" enctype="text/plain">
+        <div class="inputbox">
+        <input type="text" name="name" placeholder="name" class="name" required>
+        <input type="email" name="email" id="email" placeholder="email" required>
+    </div>
+
+    <div class="inputbox">
+        <input type="number" name="number" class="number" placeholder="number" required>
+        <input type="text" name="subject" class="subject" placeholder="subject" required>
+    </div>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="send us a message" required></textarea>
+    <br>
+        <input type="submit" value="submit" class="btn">
+    </div>
+    </form>
+</section>
+<!-- footer section -->
+
+<footer>
+ <div class="content">
+       <h1>our branches</h1>
+    <div class="text">
+       <h3>nigeria</h3>
+       <h3>india</h3>
+       <h3>russia</h3>
+       <h3>japan</h3>
+       <h3>egypt</h3>
+       <h3>france</h3>
+       <h3>canada</h3>
+    </div>
+ </div>
+
+ <div class="content">
+       <h1>quick links</h1>
+    <div class="text">
+        <a href="#home">home</a>
+        <a href="#about">about</a>
+        <a href="#services">services</a>
+        <a href="#packages">packages</a>
+        <a href="#gallery">gallery</a>
+        <a href="#booking" class="book">book now</a>
+    </div>
+ </div>
+
+ <div class="content">
+       <h1>contact info</h1>
+    <div class="text">
+       <h3><span>Tel:</span> +234 80 66 76 96 44</h3>
+       <h3><span>mail:</span>  globaltour@gmail.com</h3>
+       <h3><span>location: </span> ikd rd, lagos, nigeria.</h3>
+    </div>
+ </div>
+</footer>
+
+<div class="copyright">
+    <h3>website developed by <span> &copy; bluface</span> || 2022</h3>
+</div>
+
+
+
+
+
+
+
+
+
+<script>
+    let loader = document.querySelector('.loader');
+    window.addEventListener('load', vanish);
+
+    function vanish() {
+        loader.classList.add('disappear');
+    }
+</script>
+
+</body>
+</html>

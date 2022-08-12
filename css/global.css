@@ -1,0 +1,782 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+:root{
+    --text: #333;
+    --blue: #2696e9;
+    --border: 2px solid var(--deep-blue) ;
+    --white:#fff;
+    --deep-blue: blue; 
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: var(--white);
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--blue);
+    border-radius: 9rem;
+}
+
+section{
+    padding: 2rem 9rem;
+}
+
+h1{
+    text-transform:capitalize;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--main-color);
+}
+
+h2{
+    text-transform: capitalize;
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+
+h3{
+    text-transform: capitalize;
+    font-size: 2rem;
+    color: var(--text);
+}
+
+p{
+    font-size: 1.5rem;
+    color: var(--text);
+}
+
+span{
+    color: var(--deep-blue);
+}
+
+.loader{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+   z-index: 999;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.disappear{
+    animation: vanish 5s forwards;
+}
+
+@keyframes vanish{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+/* header section */
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    padding: 2rem 9rem;
+    padding-bottom: 4rem;
+}
+
+header .logo{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--white);
+    
+}
+
+header .navbar a{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--white);
+    margin-right: 2rem;
+}
+
+header .navbar a:hover{
+    color: var(--deep-blue);
+    font-weight: bold;
+}
+
+header .navbar a.book{
+    background: var(--white);
+    color: var(--blue);
+    padding: 1rem 3rem;
+    border-radius: 3rem;
+}
+
+#menu{
+    font-style: italic;
+    font-size: 3rem;
+    color: var(--white);
+    cursor: pointer;
+    display: none;
+}
+
+/* home section */
+
+video{
+    width: 100%; height: 100%;
+    position: absolute;
+    object-fit: cover;
+    transition: all 1.2s linear;
+    z-index: -10;
+}
+
+.video1{
+    opacity: 1;
+}
+.video2{
+    opacity: 0;
+}
+.video3{
+    opacity: 0;
+}
+
+.video4{
+    opacity: 0;
+}
+
+.home .container{
+   height: 100vh;
+    width: 100%;
+    background-color: rgba(0,0,0,.3);
+}
+
+.home .content{
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20%; 
+    padding-bottom: 5%;
+    color: var(--white);
+}
+
+.home .content h1{
+    font-size: 4rem;
+    padding-bottom: 2rem;
+}
+
+.home .content p{
+    color: var(--white);
+    padding-bottom: 2rem;
+}
+
+.home .content .btn{
+    color: var(--blue);
+    background: var(--white);
+    padding: 1.5rem 2rem;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.home .content .btn:hover{
+    font-weight: bold;
+}
+
+.home .content .icons{
+    padding-top: 2rem;
+}
+
+.home .content .icons a i{
+    color: var(--white);
+    font-size: 2rem;
+    padding: 0 1rem;
+}
+
+.home .content .icons a i:hover{
+    color: var(--deep-blue);
+}
+
+.home{
+    padding: 0;
+    margin: 0;
+}
+
+.tips{
+    margin-top: 5%;
+    min-height: 8vh;
+}
+
+.tips h1{
+    text-align: center;
+    color: var(--blue);
+    padding-bottom: 1rem;
+}
+
+.tips p{
+    color: var(--text);
+    padding-bottom: 2rem;
+}
+
+.tips form{
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    padding:2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap:1rem;
+    align-items: center;
+}
+
+.tips form .inputBox{
+    flex:1 1 23rem;
+}
+
+.tips form .inputBox span{
+    font-size: 1.7rem;
+    color:var(--blue);
+}
+
+.tips form .inputBox input{
+    font-size: 1.5rem;
+    color:var(--text);
+    background:gainsboro;
+    border-radius: .5rem;
+    margin:.5rem 0;
+    text-transform: none;
+    width: 100%;
+    padding:1rem;
+}
+
+.tips form a.btn{
+    flex:1 1 23rem;
+    color: var(--blue);
+    background: gainsboro;
+    padding: 1rem ;
+    border-radius: 3rem;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.tips form a.btn:hover{
+    font-weight: bold;
+    background: var(--blue);
+    color: var(--white);
+}
+
+/* about section */
+
+.about{
+    margin-top: 5%;
+    overflow-x: hidden;
+}
+
+.about h1{
+    text-align: center;
+    color: var(--blue);
+    padding-bottom: 2rem;
+    font-size: 4rem;
+}
+
+.about .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.about .container .content{
+    flex: 1 1 42rem;
+}
+
+.about .container .content img{
+    width: 500px;
+    height: auto;
+    border-radius: 1.5rem;
+    margin-top: 2rem;
+}
+
+.about .container .content h2{
+    color: var(--blue);
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+#more{
+    display: none;
+}
+
+.about .container .content p span{
+    color: var(--text);
+}
+
+.about .container .content p{
+    padding-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.about .container .content button{
+    background: var(--blue);
+    color: var(--white);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    border-radius: 3rem;
+}
+
+.about .container .content button:hover{
+    font-weight: bold;
+}
+
+/* service section */
+
+.services h1{
+    text-align: center;
+    color: var(--blue);
+    font-size: 4rem;
+    margin-top: 5%;
+    margin-bottom: 2rem;
+}
+
+.services .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.services .container .content{
+    flex: 1 1 30rem;
+    background: var(--white);
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.services .container .content .content1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services .container .content .content1 h2{
+    color: var(--blue);
+}
+
+.services .container .content .content1 h1{
+    color: var(--blue);
+    font-size: 3rem;
+    padding-top: 0;
+    padding-bottom: 1rem;
+}
+
+/* packages section */
+
+.packages h1{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: var(--blue);
+    font-size: 4rem;
+}
+
+.packages .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.packages .container .content{
+    flex: 1 1 30rem;
+    background: var(--white);
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    padding: 4rem;
+    border-radius: 1rem;
+    width: 600px;
+}
+
+.packages .container .content .image{
+    position: relative;
+}
+
+.packages .container .content .image img{
+    width: 100%;
+    border-radius: 2rem;
+}
+
+.packages .container .content .image h3{
+    position: absolute;
+    top: 25px; left: 25px;
+    font-size: 1.5rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.packages .container .content .text h2{
+    margin-top: 1.5rem;
+    color: var(--blue);
+    margin-bottom: 2rem;
+}
+
+.packages .container .content .text h2 span{
+    color: gray;
+    text-decoration: line-through;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.packages .container .content .text p{
+    margin-bottom: 4rem;
+}
+
+.packages .container .content a.btn{
+    color: var(--white);
+    background: var(--blue);
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    border-radius: 3rem;
+}
+
+.packages .container .content a.btn:hover{
+    font-weight: bold;
+}
+
+/* gallery section */
+
+.gallery h1{
+    color: var(--blue);
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 4rem;
+}
+
+.gallery h3{
+    color: var(--text);
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+}
+
+.gallery .container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.gallery .container .img-container{
+    flex: 1 1 42rem;
+    
+}
+
+.gallery .container .img-container img{
+    width: 100%;
+}
+
+.gallery .container .img-container .img1{
+    height: 600px;
+}
+
+/* review section */
+
+.review h1{
+    text-align: center;
+    font-size: 4rem;
+    color: var(--blue);
+    margin-top: 4rem;
+}
+
+.review h3{
+    font-size: 2rem;
+    color: var(--blue);
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.review .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; 
+}
+
+.review .container .content{
+    flex: 1 1 20rem;
+    background: var(--white);
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    padding: 4rem;
+    border-radius: 1rem;
+    margin-top: 6rem;
+}
+
+.review .container .content .image{
+    position: relative;
+}
+
+.review .container .content .image img{
+    position: absolute;
+    top: -100px; left: 50px;
+    border-radius: 100px;
+    width: 100px;
+}
+
+.review .container .content .text h4{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--blue);
+    padding: 1.5rem;
+    text-transform: capitalize;
+}
+
+/* contact section */
+
+.contact{
+    padding: 2rem 9%;
+}
+
+.contact h1{
+    margin: 4rem;
+    text-align: center;
+    color: var(--blue);
+    font-size: 4rem;
+}
+
+.contact .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contact .content form{
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    padding: 4rem;
+    min-width: 70rem;
+    text-align: center;
+    margin: 0 auto;
+} 
+
+.contact .content form .inputbox{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        padding: 1rem;
+        width: 100%;
+}
+
+.contact .content form .inputbox input{
+    background:whitesmoke;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    color: var(--text);
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    font-size: 1.5rem;
+}
+
+.contact .content form textarea{
+    margin-top: 2rem;
+    background:whitesmoke;
+    padding: 1.5rem;
+    border-radius: 1.2rem;
+    color: var(--text);
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    font-size: 1.5rem;
+    margin-bottom: 4rem;
+}
+
+.contact .content form .btn{
+    padding: 1.5rem;
+    background: whitesmoke;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+    color: var(--blue);
+    text-transform: uppercase;
+    border-radius: 3rem;
+    font-size: 2rem;
+}
+
+.contact .content form .btn:hover{
+    font-weight: bold;
+}
+
+/* footer section */
+
+footer{
+    margin: 4rem 0;
+    display: flex;
+    padding: 2rem 9%;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
+}
+
+footer h1{
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+    color: var(--blue);
+}
+
+footer h3{
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--text);
+    padding-bottom: 1rem;
+    cursor: pointer;
+}
+
+footer h3:hover, 
+footer a:hover{
+    color: var(--blue);
+    margin-left: 2rem;
+}
+
+footer a{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    color: var(--text);
+    font-weight: bold;
+}
+
+.copyright h3{
+    margin-top: 4rem;
+    padding: 2rem;
+    position: relative;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 900px){
+    #menu{
+        display: initial;
+    }
+
+    #menu-btn.fa-times{
+        transform: rotate(180deg);
+    }
+
+    header .navbar{
+        position: absolute;
+        top:99%; left:0; right:0;
+        clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+        background: var(--blue);
+    }
+
+    header .navbar.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+    }
+
+    header .navbar a{
+        font-size: 2rem;
+        margin:2.5rem 2rem;
+        display: block;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 450px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media (max-width: 991px){
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+}
